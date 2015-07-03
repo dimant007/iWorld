@@ -2,86 +2,103 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="index2.css" />
+    <link rel="stylesheet" type="text/css" href="media.css" />
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="jquery-latest.js"></script>
 </head>
 <body>
-<div id="header">
-    <div id = "slider-block">
-        <div id="leftBar"><img src="img/logo-logo.png"></div>
-        <div id="menuBar">
-            <ul>
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="#">Схема работы</a>
-                </li>
-                <li>
-                    <a href="#">О нас</a>
-                </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-                <li>
-                    <a href="#">Отзывы</a>
-                </li>
-                <li>
-                    <a href="#">Блог</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-        </div>
-        <div id="rightBar">
-            <div>
-                <div id="rightBarIcon">
-                    <img src="img/iPhone%20potrait.png">
+<div class="header">
+        <div class="container">
+            <div class="row header-block">
+                <div class="col-sm-2">
+                    <div id="leftBar"><img src="img/logo-logo.png"></div>
                 </div>
-                <div id="rightBarPhones">
-                    +38 (063) 864-54-03<br/>
-                    +38 (068) 624-13-11
+                <div class="col-sm-8">
+                    <div class="menuBar">
+                        <ul>
+                            <li>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#">Схема работы</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">Блог</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                        <div id="rightBar">
+                        <div>
+                            <div id="rightBarIcon">
+                                <img src="img/iPhone%20potrait.png">
+                            </div>
+                            <div id="rightBarPhones">
+                                +38 (063) 864-54-03<br/>
+                                +38 (068) 624-13-11
+                            </div>
+                        </div>
+                        <div id="workingDays">
+                            мы работаем: пн-пт 10:00-18:00
+                        </div>
+                        <div id="callback">
+                            <a href="#">заказать обратный звонок</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="workingDays">
-                мы работаем: пн-пт 10:00-18:00
-            </div>
-            <div id="callback">
-                <a href="#">заказать обратный звонок</a>
-            </div>
         </div>
-    </div>
 </div>
-<div id="summary">
+<div class="summary">
     <div id = "tree">
         <p>Главная > Оценка устройства iphone 5 бу > Продажа / обмен iPhone 5</p>
     </div>
-    <div class = "exchange">
-        <div class="exchange-block">
-            <p id="exchange">Продажа / обмен iPhone 5</p>
+
+    <div class="container">
+        <div class="row">
+            <div class = "exchange">
+                <p id="exchange-title">Продажа / обмен iPhone 5</p>
+            </div>
         </div>
-        <div>
-                <ul class="exchange-table">
-                    <li>
-                        <div class = "exchange-circle"><div class = "numbers">1</div></div>
-                        <div class="exchange-text">Заполняем информацию о<br>вашем гаджете</div>
-                        <div class="arrow"></div>
-                    </li>
-                    <li>
-                        <div class = "exchange-circle"><div class = "numbers">2</div></div>
-                        <div class="exchange-text">Узнайте оценочную стоимость<br>вашего гаджета</div>
-                        <div class="arrow"></div>
-                    </li>
-                    <li>
-                        <div class = "exchange-circle"><div class = "numbers">3</div></div>
-                        <div class="exchange-text">Получите деньги или новое<br>устройство apple</div>
-                    </li>
-                </ul>
+        <div class="row summary-row">
+            <ul class="exchange-table">
+                <li class="col-lg-4 info-header">
+                    <div class = "exchange-circle"><div class = "numbers">1</div></div>
+                    <div class="exchange-text">Заполняем информацию о вашем гаджете</div>
+                    <div class="arrow"></div>
+                </li>
+                <li class="col-lg-4 info-header">
+                    <div class = "exchange-circle"><div class = "numbers">2</div></div>
+                    <div class="exchange-text">Узнайте оценочную стоимость вашего гаджета</div>
+                    <div class="arrow"></div>
+                </li>
+                <li class="col-lg-4 info-header">
+                    <div class = "exchange-circle"><div class = "numbers">3</div></div>
+                    <div class="exchange-text">Получите деньги или новое устройство apple</div>
+                </li>
+            </ul>
         </div>
     </div>
+
     <div class = "result-check">
         <div class = "rectangle">
             <div id = "rectangle-title">
@@ -100,283 +117,403 @@
             </div>
         </div>
     </div>
-    <div class = "goods">
-        <div id="goods-title">
-            Выбери модель для обмена и получи подарок
-        </div>
-        <div class="left-bar">
-            <div class="five-c">
-                <img id = "five-c" src="img/5c.png">
-                <div id = "five-c-title">iPhone 5 c</div>
-                <div class = "left-bar-double">
-                    <div>Цвет корпуса:</div>
-                    <div>Объём памяти:</div>
-                    <div>Сумма доплаты:</div>
-                </div>
-                <div class = "right-bar-double">
-                    <div>
-                        <ul class="fivec-colors">
-                            <li><a href="#"><div class="goods-circle-white"></div></a></li>
-                            <li><a href="#"><div class="goods-circle-pink"></div></a></li>
-                            <li><a href="#"><div class="goods-circle-yellow"></div></a></li>
-                            <li><a href="#"><div class="goods-circle-blue"></div></a></li>
-                            <li><a href="#"><div class="goods-circle-green"></div></a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="fivec-memory">
-                            <li><a href="#"><div class="memory-size"><div>8 GB</div></div></a></li>
-                            <li><a href="#"><div class="memory-size"><div>16 GB</div></div></a></li>
-                            <li><a href="#"><div class="memory-size"><div>32 GB</div></div></a></li>
-                        </ul>
-                    </div>
-                    <div class="fivec-sum">
-                        <a href="#"><div class="sum"><div>3200 грн</div></div></a>
-                    </div>
-                    <div>
-                        <a href="#"><button class="five-change">ОБМЕНЯТЬ</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="six">
-                <img id = "six-img" src="img/6.png">
-                <div id = "six-title">iPhone 6</div>
-                <div class = "left-bar-double">
-                    <div>Цвет корпуса:</div>
-                    <div>Объём памяти:</div>
-                    <div>Сумма доплаты:</div>
-                </div>
-                <div class = "right-bar-double">
-                    <div>
-                        <ul class="fivec-colors">
-                            <li><a href="#"><div class="goods-circle-grey"></div></a></li>
-                            <li><a href="#"><div class="goods-circle-velvet"></div></a></li>
-                            <li><a href="#"><div class="goods-circle-black"></div></a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="fivec-memory">
-                            <li><a href="#"><div class="memory-size"><div>16 GB</div></div></a></li>
-                            <li><a href="#"><div class="memory-size"><div>64 GB</div></div></a></li>
-                            <li><a href="#"><div class="memory-size"><div>128 GB</div></div></a></li>
-                        </ul>
-                    </div>
-                    <div class="fivec-sum">
-                        <a href="#"><div class="sum"><div>3200 грн</div></div></a>
-                    </div>
-                    <div>
-                        <a href="#"><button class="five-change">ОБМЕНЯТЬ</button></a>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div id="goods-title">
+                Выбери модель для обмена и получи подарок
             </div>
         </div>
-        <div class="right-bar">
-            <div>
-                <img id = "five-s" src="img/5s.png">
-                <div id = "five-s-title">iPhone 5 s</div>
-                <div class = "left-bar-double-5s">
-                    <div>Цвет корпуса:</div>
-                    <div>Объём памяти:</div>
-                    <div>Сумма доплаты:</div>
-                </div>
-                <div class = "right-bar-double-5s">
-                    <div>
-                        <ul class="fivec-colors">
-                            <li><a href="#"><div class="goods-circle-grey"></div></a></li>
-                            <li><a href="#"><div class="goods-circle-velvet"></div></a></li>
-                            <li><a href="#"><div class="goods-circle-black"></div></a></li>
-                        </ul>
+        <div class="row summary-row">
+
+            <div class="col-md-6 choice-block">
+                        <figure>
+                            <img alt="iPhone 5c" title="iPhone 5c" src="img/5c.png">
+                        </figure>
+                        <div class="model-title">
+                            iPhone 5 c
+                        </div>
+                        <div class="choice-model-info">
+                            <form method="POST" action="" class="choice-form">
+                                <div class="choice-model-color">
+                                    <p class="row-label">Цвет корпуса:</p>
+                                    <div class="choice-model-color-block">
+                                        <div class="choice-color-button">
+                                            <input value="95" type="radio" name="data[value_id]" id="item-68-95">
+                                            <label style=" background-color: Blue " class="checkbox" for="item-68-95"></label>
+                                        </div>
+                                        <div class="choice-color-button">
+                                            <input value="96" type="radio" name="data[value_id]" id="item-68-96">
+                                            <label style=" background-color: GreenYellow " class="checkbox" for="item-68-96"></label>
+                                        </div>
+                                        <div class="choice-color-button">
+                                            <input value="97" type="radio" name="data[value_id]" id="item-68-97">
+                                            <label style=" background-color: Yellow " class="checkbox" for="item-68-97"></label>
+                                        </div>
+                                        <div class="choice-color-button">
+                                            <input value="98" type="radio" name="data[value_id]" id="item-68-98">
+                                            <label style=" background-color: AliceBlue" class="checkbox" for="item-68-98"></label>
+                                        </div>
+                                        <div class="choice-color-button">
+                                            <input value="99" type="radio" name="data[value_id]" id="item-68-99">
+                                            <label style=" background-color: Magenta" class="checkbox" for="item-68-99"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="choice-model-memory">
+                                    <p class="row-label">Обьем памяти:</p>
+                                    <div class="choice-model-memory-size">
+                                        <div class="choice-model-memory-block">
+                                            <input value="9" type="radio" name="data[exchange_id]" id="type-9">
+                                            <label data-price="0" class="checkbox type-label" for="type-9">8gb</label>
+                                        </div>
+                                        <div class="choice-model-memory-block">
+                                            <input value="10" type="radio" name="data[exchange_id]" id="type-10">
+                                            <label data-price="0" class="checkbox type-label" for="type-10">16gb</label>
+                                        </div>
+                                        <div class="choice-model-memory-block">
+                                            <input value="11" type="radio" name="data[exchange_id]" id="type-11">
+                                            <label data-price="0" class="checkbox type-label" for="type-11">32gb</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="choice-model-surcharge">
+                                    <p class="row-label">Сумма доплаты:</p>
+                                    <span data-sum="8000" class="new-sum">-160 грн</span>
+                                </div>
+                                <div class="choice-model-button"><button>обменять</button></div>
+                            </form>
+                        </div>
                     </div>
-                    <div>
-                        <ul class="fivec-memory">
-                            <li><a href="#"><div class="memory-size"><div>16 GB</div></div></a></li>
-                            <li><a href="#"><div class="memory-size"><div>32 GB</div></div></a></li>
-                            <li><a href="#"><div class="memory-size"><div>64 GB</div></div></a></li>
-                        </ul>
+
+            <div class="col-md-6 choice-block">
+                        <figure>
+                            <img alt="iPhone 5s" title="iPhone 5s" src="img/5s.png">
+                        </figure>
+                        <div class="model-title">
+                            iPhone 5s
+                        </div>
+                        <div class="choice-model-info">
+                            <form method="POST" action="" class="choice-form">
+                                <div class="choice-model-color">
+                                    <p class="row-label">Цвет корпуса:</p>
+                                    <div class="choice-model-color-block">
+                                        <div class="choice-color-button">
+                                            <input value="100" type="radio" name="data[value_id]" id="item-66-100">
+                                            <label style=" background-color: Gray " class="checkbox" for="item-66-100"></label>
+                                        </div>
+                                        <div class="choice-color-button">
+                                            <input value="101" type="radio" name="data[value_id]" id="item-66-101">
+                                            <label style=" background-color: AliceBlue" class="checkbox" for="item-66-101"></label>
+                                        </div>
+                                        <div class="choice-color-button">
+                                            <input value="102" type="radio" name="data[value_id]" id="item-66-102">
+                                            <label style=" background-color: Khaki " class="checkbox" for="item-66-102"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="choice-model-memory">
+                                    <p class="row-label">Обьем памяти:</p>
+                                    <div class="choice-model-memory-size">
+                                        <div class="choice-model-memory-block">
+                                            <input value="12" type="radio" name="data[exchange_id]" id="type-12">
+                                            <label data-price="0" class="checkbox type-label" for="type-12">16gb</label>
+                                        </div>
+                                        <div class="choice-model-memory-block">
+                                            <input value="13" type="radio" name="data[exchange_id]" id="type-13">
+                                            <label data-price="0" class="checkbox type-label" for="type-13">32gb</label>
+                                        </div>
+                                        <div class="choice-model-memory-block">
+                                            <input value="14" type="radio" name="data[exchange_id]" id="type-14">
+                                            <label data-price="0" class="checkbox type-label" for="type-14">64gb</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="choice-model-surcharge">
+                                    <p class="row-label">Сумма доплаты:</p>
+                                    <span data-sum="8000" class="new-sum">4130 грн</span>
+                                </div>
+                                <div class="choice-model-button"><button onclick="">обменять</button></div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="fivec-sum">
-                        <a href="#"><div class="sum"><div>3200 грн</div></div></a>
+
+        </div>
+        <div class="row summary-row">
+
+            <div class="col-md-6 choice-block">
+                        <figure>
+                            <img width="" height="" alt="iPhone 6" title="iPhone 6" src="img/6.png">
+                        </figure>
+                        <div class="model-title">
+                            iPhone 6
+                        </div>
+                        <div class="choice-model-info">
+                            <form method="POST" action="" class="choice-form">
+                                <div class="choice-model-color">
+                                    <p class="row-label">Цвет корпуса:</p>
+                                    <div class="choice-model-color-block">
+                                        <div class="choice-color-button">
+                                            <input value="103" type="radio" name="data[value_id]" id="item-65-103">
+                                            <label style=" background-color: Gray" class="checkbox" for="item-65-103"></label>
+                                        </div>
+                                        <div class="choice-color-button">
+                                            <input value="104" type="radio" name="data[value_id]" id="item-65-104">
+                                            <label style=" background-color: AliceBlue" class="checkbox" for="item-65-104"></label>
+                                        </div>
+                                        <div class="choice-color-button">
+                                            <input value="105" type="radio" name="data[value_id]" id="item-65-105">
+                                            <label style=" background-color: Khaki" class="checkbox" for="item-65-105"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="choice-model-memory">
+                                    <p class="row-label">Обьем памяти:</p>
+                                    <div class="choice-model-memory-size">
+                                        <div class="choice-model-memory-block">
+                                            <input value="15" type="radio" name="data[exchange_id]" id="type-15">
+                                            <label data-price="0" class="checkbox type-label" for="type-15">16gb</label>
+                                        </div>
+                                        <div class="choice-model-memory-block">
+                                            <input value="16" type="radio" name="data[exchange_id]" id="type-16">
+                                            <label data-price="0" class="checkbox type-label" for="type-16">64gb</label>
+                                        </div>
+                                        <div class="choice-model-memory-block">
+                                            <input value="17" type="radio" name="data[exchange_id]" id="type-17">
+                                            <label data-price="0" class="checkbox type-label" for="type-17">128gb</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="choice-model-surcharge">
+                                    <p class="row-label">Сумма доплаты:</p>
+                                    <span data-sum="8000" class="new-sum">6970 грн</span>
+                                </div>
+                                <div class="choice-model-button"><button onclick="">обменять</button></div>
+                            </form>
+                        </div>
                     </div>
-                    <div>
-                        <a href="#"><button class="five-change">ОБМЕНЯТЬ</button></a>
+
+            <div class="col-md-6 choice-block">
+                        <figure>
+                            <img alt="iPhone 6 plus" title="iPhone 6 plus" src="img/6+.png">
+                        </figure>
+                        <div class="model-title">
+                            iPhone 6 plus
+                        </div>
+                        <div class="choice-model-info">
+                            <form method="POST" action="" class="choice-form">
+                                <div class="choice-model-color">
+                                    <p class="row-label">Цвет корпуса:</p>
+                                    <div class="choice-model-color-block">
+                                        <div class="choice-color-button">
+                                            <input value="106" type="radio" name="data[value_id]" id="item-64-106">
+                                            <label style=" background-color: Gray" class="checkbox" for="item-64-106"></label>
+                                        </div>
+                                        <div class="choice-color-button">
+                                            <input value="107" type="radio" name="data[value_id]" id="item-64-107">
+                                            <label style=" background-color: AliceBlue" class="checkbox" for="item-64-107"></label>
+                                        </div>
+                                        <div class="choice-color-button">
+                                            <input value="108" type="radio" name="data[value_id]" id="item-64-108">
+                                            <label style=" background-color: Black" class="checkbox" for="item-64-108"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="choice-model-memory">
+                                    <p class="row-label">Обьем памяти:</p>
+                                    <div class="choice-model-memory-size">
+                                        <div class="choice-model-memory-block">
+                                            <input value="18" type="radio" name="data[exchange_id]" id="type-18">
+                                            <label data-price="0" class="checkbox type-label" for="type-18">16gb</label>
+                                        </div>
+                                        <div class="choice-model-memory-block">
+                                            <input value="19" type="radio" name="data[exchange_id]" id="type-19">
+                                            <label data-price="0" class="checkbox type-label" for="type-19">64gb</label>
+                                        </div>
+                                        <div class="choice-model-memory-block">
+                                            <input value="20" type="radio" name="data[exchange_id]" id="type-20">
+                                            <label data-price="0" class="checkbox type-label" for="type-20">128gb</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="choice-model-surcharge">
+                                    <p class="row-label">Сумма доплаты:</p>
+                                    <span data-sum="8000" class="new-sum">8620 грн</span>
+                                </div>
+                                <div class="choice-model-button"><button onclick="">обменять</button></div>
+                            </form>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div>
-                <img id = "six-plus" src="img/6+.png">
-                <div id = "five-s-title">iPhone 6 Plus</div>
-                <div class = "left-bar-double-5s">
-                    <div>Цвет корпуса:</div>
-                    <div>Объём памяти:</div>
-                    <div>Сумма доплаты:</div>
-                </div>
-                <div class = "right-bar-double-5s">
-                    <div>
-                        <ul class="fivec-colors">
-                            <li><a href="#"><div class="goods-circle-grey"></div></a></li>
-                            <li><a href="#"><div class="goods-circle-velvet"></div></a></li>
-                            <li><a href="#"><div class="goods-circle-black"></div></a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="fivec-memory">
-                            <li><a href="#"><div class="memory-size"><div>16 GB</div></div></a></li>
-                            <li><a href="#"><div class="memory-size"><div>64 GB</div></div></a></li>
-                            <li><a href="#"><div class="memory-size"><div>128 GB</div></div></a></li>
-                        </ul>
-                    </div>
-                    <div class="fivec-sum">
-                        <a href="#"><div class="sum"><div>3200 грн</div></div></a>
-                    </div>
-                    <div>
-                        <a href="#"><button class="five-change">ОБМЕНЯТЬ</button></a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
-    <div class="other">
-        <div id="other-title">
-            Другие устройства apple для обмена
-        </div>
-        <div class="other-left">
-            <img id = "mac-img" src="img/мак.png">
-            <div id = "mac-title">MacBook Air 11"(Z0NX0016S)</div>
-            <div class = "mac-left-bar">
-                <div>Год выпуска:</div>
-                <div>Сумма доплаты:</div>
-            </div>
-            <div class = "mac-right-bar">
-                <div>
-                    2013
-                </div>
-                <div class="mac-sum">
-                    <a href="#"><div class="sum"><div>3200 грн</div></div></a>
-                </div>
-            </div>
-            <div class="mac-text">
-                На юге Франции 24 марта разбился самолет Airbus A320
-                авиакомпании Germanwings, следовавший рейсом 9525 из
-                Барселоны в Дюссельдорф. Незадолго до крушения в Альпах
-                второй пилот самолета Андреас Любиц заперся в кабине,
-                воспользовавшись тем, что капитан отлучился; после этого
-                самолет начал снижение.
-            </div>
-            <div>
-                <a href="#"><button class="mac-button">ОБМЕНЯТЬ</button></a>
+
+    <div class="container">
+        <div class="row">
+
+            <div id="other-title">
+                Другие устройства apple для обмена
             </div>
         </div>
-        <div class="other-right">
-            <img id = "mac-img" src="img/мак.png">
-            <div id = "mac-title">MacBook Air 11"(Z0NX0016S)</div>
-            <div class = "mac-left-bar">
-                <div>Год выпуска:</div>
-                <div>Сумма доплаты:</div>
-            </div>
-            <div class = "mac-right-bar">
-                <div>
-                    2013
+        <div class="row summary-row">
+
+            <div class = "col-md-6 choice-block-mac">
+                    <figure>
+                        <img alt="Macbook Air 11" title="Macbook Air 11" src="img/мак.png">
+                    </figure>
+                    <div class="model-title-mac">
+                        MacBook Air 11"(Z0NX0016S)
+                    </div>
+                    <div class="choice-model-info">
+                        <form method="POST" action="" class="choice-form">
+                            <div class="choice-model-color">
+                                <p class="row-label">Год выпуска:</p>
+                                <div class="choice-model-year">
+                                </div>
+                            </div>
+                            <div class="choice-model-surcharge">
+                                <p class="row-label">Сумма доплаты:</p>
+                                <span data-sum="8000" class="new-sum">3200 грн</span>
+                            </div>
+                            <div class="choice-model-text">
+                                <p>На юге Франции 24 марта разбился самолет Airbus A320
+                                авиакомпании Germanwings, следовавший рейсом 9525 из
+                                Барселоны в Дюссельдорф. Незадолго до крушения в Альпах
+                                второй пилот самолета Андреас Любиц заперся в кабине,
+                                воспользовавшись тем, что капитан отлучился; после этого
+                                самолет начал снижение.</p>
+                            </div>
+                            <div class="choice-model-button-mac"><button onclick="">обменять</button></div>
+                        </form>
+                    </div>
                 </div>
-                <div class="mac-sum">
-                    <a href="#"><div class="sum"><div>3200 грн</div></div></a>
+
+            <div class = "col-md-6 choice-block-mac">
+                    <figure>
+                        <img alt="Macbook Air 11" title="Macbook Air 11" src="img/мак.png">
+                    </figure>
+                    <div class="model-title-mac">
+                        MacBook Air 11"(Z0NX0016S)
+                    </div>
+                    <div class="choice-model-info">
+                        <form method="POST" action="" class="choice-form">
+                            <div class="choice-model-color">
+                                <p class="row-label">Год выпуска:</p>
+                                <div class="choice-model-year">
+                                </div>
+                            </div>
+                            <div class="choice-model-surcharge">
+                                <p class="row-label">Сумма доплаты:</p>
+                                <span data-sum="8000" class="new-sum">3200 грн</span>
+                            </div>
+                            <div class="choice-model-text">
+                                <p>На юге Франции 24 марта разбился самолет Airbus A320
+                                авиакомпании Germanwings, следовавший рейсом 9525 из
+                                Барселоны в Дюссельдорф. Незадолго до крушения в Альпах
+                                второй пилот самолета Андреас Любиц заперся в кабине,
+                                воспользовавшись тем, что капитан отлучился; после этого
+                                самолет начал снижение.</p>
+                            </div>
+                            <div class="choice-model-button-mac"><button onclick="">обменять</button></div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="mac-text">
-                На юге Франции 24 марта разбился самолет Airbus A320
-                авиакомпании Germanwings, следовавший рейсом 9525 из
-                Барселоны в Дюссельдорф. Незадолго до крушения в Альпах
-                второй пилот самолета Андреас Любиц заперся в кабине,
-                воспользовавшись тем, что капитан отлучился; после этого
-                самолет начал снижение.
-            </div>
-            <div>
-                <a href="#"><button class="mac-button">ОБМЕНЯТЬ</button></a>
-            </div>
         </div>
+
     </div>
-    <div class="presents">
-        <div id="presents-title">
-            При обмене устройств apple мы дарим подарки
-        </div>
-        <div class="presents-list">
-            <div><img src = "img/иконка%201.png"></div>
-            <div><img src = "img/ТЕЛЕФОН%20С%20ПРИЛОЖЕНИЯМИ.png"></div>
-            <div><img src = "img/Forma%201.png"></div>
-            <div><img src = "img/Forma%201%20(1).png"></div>
-        </div>
-        <div class="presents-list-text">
-            <div>ПЕРЕНОС ДАННЫХ СО<br>СТАРОГО УСТРОЙСТВА<br>APPLE НА НОВОЕ</div>
-            <div>УСТАНОВКА ПАКЕТА<br>ПРИЛОЖЕНИЙ<br>«ПРЕМИУМ»</div>
-            <div>ОБРЕЗАНИЕ SIM-КАРТЫ<br>ПОД ВАШЕ НОВОЕ<br>УСТРОЙСТВО</div>
-            <div>ПОКЛЕЙКА ЗАЩИТНОЙ<br>ПЛЕНКИ НА НОВОЕ<br>УСТРОЙСТВО</div>
-            <div id = "top">
-                <a href="#"><div><img src = "img/Слой%208.png"></div></a>
+
+    <div class="presents-wrapper">
+
+        <div class="container">
+
+            <div id="presents-title">
+                    При обмене устройств apple мы дарим подарки
+
+            </div>
+
+            <div class = "row presents">
+
+                <div class="col-sm-3">
+                    <div class="presents-block">
+                        <figure>
+                            <img src="img/1_cilrle_3_block.png">
+                        </figure>
+                        <p>ПЕРЕНОС ДАННЫХ СО<br>СТАРОГО УСТРОЙСТВА<br>APPLE НА НОВОЕ</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="presents-block">
+                        <figure>
+                            <img src="img/2_cilrle_3_block.png">
+                        </figure>
+                        <p>УСТАНОВКА ПАКЕТА<br>ПРИЛОЖЕНИЙ<br>«ПРЕМИУМ»</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="presents-block">
+                        <figure>
+                            <img src="img/3_cilrle_3_block.png">
+                        </figure>
+                        <p>ОБРЕЗАНИЕ SIM-КАРТЫ<br>ПОД ВАШЕ НОВОЕ<br>УСТРОЙСТВО</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="presents-block">
+                        <figure>
+                            <img src="img/4_cilrle_3_block.png">
+                        </figure>
+                        <p>ПОКЛЕЙКА ЗАЩИТНОЙ<br>ПЛЕНКИ НА НОВОЕ<br>УСТРОЙСТВО</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
-<div id="footer">
-    <div id = "back">
-        <div class="block">
-            <div class="left-block">
-                <div>
-                    <div class="block-title">О СОТРУДНИЧЕСТВЕ</div>
-                    <hr>
-                    <div class="block-info"><a href="#">О компании</a></div><br>
-                    <div class="block-info"><a href="#">Продажа, обмен устройств apple</a></div><br>
-                    <div class="block-info"><a href="#">Схема работы</a></div><br>
-                    <div class="block-info"><a href="#">Частозадаваемые вопросы</a></div><br>
-                    <div class="block-info"><a href="#">Отзывы</a></div><br>
-                    <div class="block-info"><a href="#">Блог</a></div>
-                </div>
-                <div>
-                    <div class="block-title">НАШИ ПРЕДЛОЖЕНИЯ</div>
-                    <hr>
-                    <div class="block-info"><a href="#">Продажа iPhone и обмен</a></div><br>
-                    <div class="block-info"><a href="#">Продажа iPad и обмен</a></div><br>
-                    <div class="block-info"><a href="#">Продажа iPod и обмен</a></div><br>
-                    <div class="block-info"><a href="#">Продажа MacBook и обмен</a></div>
-                </div>
+<div class="footer">
+    <div class="container">
+        <div class="row footer-blocks">
+
+            <div class="col-sm-3">
+                <div class="footer-title">О СОТРУДНИЧЕСТВЕ</div>
+                <hr>
+                <p><a href="#">О компании</a></p><br>
+                <p><a href="#">Продажа, обмен устройств apple</a></p><br>
+                <p><a href="#">Схема работы</a></p><br>
+                <p><a href="#">Частозадаваемые вопросы</a></p><br>
+                <p><a href="#">Отзывы</a></p><br>
+                <p><a href="#">Блог</a></p>
             </div>
-            <div class="right-block">
-                <div>
-                    <div class="block-title">САМОЕ ПОПУЛЯРНОЕ</div>
-                    <hr>
-                    <div class="block-info"><a href="#">Обмен iPhone 5 на iPhone 6</a></div><br>
-                    <div class="block-info"><a href="#">Поменять iPhone 5s на iPhone 6</a></div><br>
-                    <div class="block-info"><a href="#">Продажа iPhone 4s</a></div><br>
-                    <div class="block-info"><a href="#">Продажа iPad 2 64gb + 3G</a></div><br>
-                    <div class="block-info"><a href="#">Обмен iPad 4 на iPad Air 2</a></div><br>
-                    <div class="block-info"><a href="#">Продажа MacBook</a></div><br>
-                    <div class="block-info"><a href="#">Продажа MacBook Air 2010-2013г</a></div>
-                </div>
-                <div class="contacts">
-                    <div class="block-title">НАШИ КОНТАКТЫ</div>
-                    <hr>
-                    <nav>
-                        <ul>
-                            <li class="footer-location">
-                                <p>Украина, Киев, ул. Красноармейская<br>67/7 (ст. м. Олимпийская)</p>
-                            </li>
-                            <li class="footer-phone">
-                                <p>+38 (093) 245-83-02</p>
-                                <p>+38 (066) 734-90-64</p>
-                            </li>
-                            <li class="footer-mail">
-                                <p>bigmag.com.ua@gmail.com</p>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+
+            <div class="col-sm-3">
+                <div class="footer-title">НАШИ ПРЕДЛОЖЕНИЯ</div>
+                <hr>
+                <p><a href="#">Продажа iPhone и обмен</a></p><br>
+                <p><a href="#">Продажа iPad и обмен</a></p><br>
+                <p><a href="#">Продажа iPod и обмен</a></p><br>
+                <p><a href="#">Продажа MacBook и обмен</a></p>
             </div>
+
+            <div class="col-sm-3">
+                <div class="footer-title">САМОЕ ПОПУЛЯРНОЕ</div>
+                <hr>
+                <p><a href="#">Обмен iPhone 5 на iPhone 6</a></p><br>
+                <p><a href="#">Поменять iPhone 5s на iPhone 6</a></p><br>
+                <p><a href="#">Продажа iPhone 4s</a></p><br>
+                <p><a href="#">Продажа iPad 2 64gb + 3G</a></p><br>
+                <p><a href="#">Обмен iPad 4 на iPad Air 2</a></p><br>
+                <p><a href="#">Продажа MacBook</a></p><br>
+                <p><a href="#">Продажа MacBook Air 2010-2013г</a></p>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="footer-title">НАШИ КОНТАКТЫ</div>
+                <hr>
+            </div>
+
         </div>
-    </div>
-    <div class="low">
-        <div id="low-text-one">Copyright © Все права защищены, 2015</div>
-        <div class="low-img"><a href="#"><div class="low-circle"><img src="img/Twitter.png"></div></a>
-            <a href="#"><div class="low-circle"><img src="img/Facebook.png"></div></a>
-            <a href="#"><div class="low-circle"><img src="img/Google+.png"></div></a></div>
-        <div id="low-text-two">Создание сайта  ВТ</div>
     </div>
 </div>
 </body>
