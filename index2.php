@@ -1,9 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
 
-
-$EntityFactory = new App\EntityFactory();
-
 class EntityFactory
 {
     static function create($objectName, $data, PDO $pdo)
